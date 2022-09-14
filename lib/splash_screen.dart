@@ -12,14 +12,12 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
-
-
   @override
   void initState() {
     super.initState();
-    SharedPreferences.getInstance().then((prefs){
+    SharedPreferences.getInstance().then((prefs) {
       final userRepo = UserRepository(prefs);
-      Get.put(UserViewModal(userRepo));
+      Get.put(UserViewModal(userRepo), permanent: true);
     });
   }
 

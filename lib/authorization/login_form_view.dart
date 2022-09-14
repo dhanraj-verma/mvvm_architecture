@@ -18,11 +18,15 @@ class LoginFormView extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             TextFormField(
-              onChanged: (value){
+              onChanged: (value) {
                 _userViewModal.userName = value;
               },
             ),
-            ElevatedButton(onPressed: ()=>_userViewModal.login(), child: const Text("Login",))
+            ElevatedButton(
+                onPressed: () => _userViewModal.login(),
+                child: const Text(
+                  "Login",
+                ))
           ],
         ),
       ),
