@@ -38,6 +38,10 @@ dependencies:
   cupertino_icons: ^1.0.2
   shared_preferences: ^2.0.15
   get: ^4.6.5
+  template_package:
+    git:
+      url: git@github.com:dhanraj-verma/template_package.git
+      ref: v1.0.0
 
 dev_dependencies:
   flutter_test:
